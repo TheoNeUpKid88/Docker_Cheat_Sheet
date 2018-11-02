@@ -14,3 +14,7 @@ Docker Command line CheatSheet
 
 ## Exec bash inside the last run container
 `docker exec -ti $(docker ps -q |head -n1) bash`
+
+## Exec command within continer to reveal docker ip addr
+
+`docker exec -it node_container ip addr show eth0`
