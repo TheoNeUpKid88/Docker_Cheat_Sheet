@@ -5,7 +5,7 @@ Docker Command line CheatSheet
 `docker run -ti image`
 
 ## Stop, delete all docker containers (remove -f force, remove if unnecessary)
-`docker stop $(docker ps -a -q)`
+`docker stop $(docker ps -a)`
 
 `docker image rm -f $(docker images -a)`
 
