@@ -5,9 +5,9 @@ Docker Command line CheatSheet
 `docker run -ti image`
 
 ## Stop, delete all docker containers (remove -f force, remove if unnecessary)
-`docker stop $(docker ps -a)`
+`docker stop $(docker ps -a -q)` //will file if containers are already down
 
-`docker image rm -f $(docker images -a)`
+`docker image rm -f $(docker images -a)` 
 
 ## Exec bash inside a running container
 `docker exec -ti CONTAINER_ID bash`
