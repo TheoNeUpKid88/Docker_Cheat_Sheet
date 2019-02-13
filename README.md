@@ -4,10 +4,13 @@ Docker Command line CheatSheet
 ## Run a new container in the foregrond
 `docker run -ti image`
 
+## Run a docker-composed container in the background
+`docker-compose up -d image`
+
 ## Stop, delete all docker containers (remove -f force, remove if unnecessary)
 `docker stop $(docker ps -a -q)` //will file if containers are already down
 
-`docker image rm -f $(docker images -a)` 
+`docker image rm -f $(docker images -a)` // WARNING this will delete all images on host machine
 
 ## Exec bash inside a running container
 `docker exec -ti CONTAINER_ID bash`
