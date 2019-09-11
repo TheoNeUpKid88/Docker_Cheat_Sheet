@@ -13,7 +13,7 @@ Docker Command line CheatSheet
 `docker image rm -f $(docker images -a)` // WARNING this will delete all images on host machine
 ## Advance removal of docker container with orpahned volumes
 
-`docker volume rm $(docker volume ls -qf dangling=true)`
+`docker volume rm $(docker volume list) -f dangling=true`
 
 ## Prune Docker.raw System File
 
